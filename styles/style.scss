@@ -1,0 +1,401 @@
+@use 'vars';
+* {
+  margin: 0;
+}
+body {
+  font-family: vars.$font-josefin;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+  color: vars.$white;
+}
+
+.overview {
+  background: url(../images/mobile/image-hero.jpg) no-repeat center;
+  background-size: cover;
+  height: 650px;
+  width: 100%;
+  nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    img{
+      height: 25px;
+      width: 150px;
+      margin: 30px 0 0 40px;
+    }
+  }
+  ul{
+    display: none;
+  }
+  i{
+    background: url(../images/icon-hamburger.svg);
+    display: block;
+    width: 21px;
+    height: 16px;
+    margin: 25px 40px 0 0;
+    cursor: pointer;
+  }
+  .box {
+    border: 1px solid white;
+    width: 300px;
+    height: 290px;
+    margin: 150px 40px 0 40px;
+    p {
+      color: white;
+      font-family: vars.$font-josefin;
+      font-size: 40px;
+      font-weight: 300;
+      text-transform: uppercase;
+      margin: 0;
+      padding: 40px 20px;
+      width: 86%;
+    }
+  }
+}
+
+main {
+  height: 90vh;
+  margin: 50px 30px;
+  .principal {
+    height: 100%;
+    img{
+      margin: 0 10px;
+      width: 100%;
+      height: 210px;
+      object-fit: cover;
+    }
+    .interactive-card {
+      width: 100%;
+      height: 400px;
+      background-color: vars.$white;
+      h2{
+        text-transform: uppercase;
+        word-spacing: 5px;
+        text-align: center;
+        color: vars.$black;
+        font-size: 35px;
+        margin-top: 50px;
+      }
+      p {
+        display: block;
+        color: vars.$very-dark-gray;
+        font-family: vars.$font-alata;
+        margin: 20px auto;
+        text-align: center;
+        line-height: 30px;
+        width: 100%;
+      }
+    }
+  }
+}
+.grid-section{
+  margin: 180px 40px 60px 40px;
+  .title {
+    margin-bottom: 40px;
+    h2 {
+      text-transform: uppercase;
+      margin: 0 auto;
+      text-align: center;
+      font-size: 40px;
+      font-family: vars.$font-josefin;
+      font-weight: 400;
+    }
+    button {
+      display: none;
+    }
+  }
+  .grid-cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(8, (150px));
+    gap: 30px;
+    div {
+      width: 100%;
+      h3 {
+        position: relative;
+        top: 90px;
+        left: 20px;
+        color: white;
+        text-transform: uppercase;
+        font-size: 25px;
+        font-family: vars.$font-josefin;
+      }
+    }
+    .grid-1 {
+      background: url('../images/mobile/image-deep-earth.jpg') no-repeat;
+      background-size: cover;
+    }
+    .grid-2 {
+      background: url('../images/mobile/image-night-arcade.jpg') no-repeat;
+      background-size: cover;
+    }
+    .grid-3 {
+      background: url('../images/mobile/image-soccer-team.jpg') no-repeat;
+      background-size: cover;
+    }
+    .grid-4 {
+      background: url('../images/mobile/image-grid.jpg') no-repeat;
+      background-size: cover;
+    }
+    .grid-5 {
+      background: url('../images/mobile/image-from-above.jpg') no-repeat;
+      background-size: cover;
+    }
+    .grid-6 {
+      background: url('../images/mobile/image-pocket-borealis.jpg') no-repeat;
+      background-size: cover;
+    }
+    .grid-7 {
+      background: url('../images/mobile/image-curiosity.jpg') no-repeat;
+      background-size: cover;
+    }
+    .grid-8 {
+      background: url('../images/mobile/image-fisheye.jpg') no-repeat;
+      background-size: cover;
+    }
+  }
+}
+
+footer {
+  background-color: vars.$black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  img {
+    width: 150px;
+    height: 25px;
+    margin: 40px 0 20px 0;
+  }
+  .low-section { 
+    margin: 20px 0 0 0px;
+    ul {
+      margin: 0 100px;
+      li {
+        list-style: none;
+        padding: 15px 0;
+      }
+    }
+    p {
+      text-align: end;
+      color: vars.$dark-gray;
+      margin: 20px 40px;
+    }
+  }
+  .attribution {
+    text-align: center;
+    margin-top: 40px;
+    padding-bottom: 20px;
+    a {
+      text-decoration: none;
+      color: vars.$dark-gray;
+    }
+  }
+}
+
+
+@media (min-width: 768px){
+  .overview {
+    background: url(../images/desktop/image-hero.jpg) no-repeat;
+    background-size: cover;
+    height: 450px;
+    width: 100%;
+    nav {
+      display: flex;
+      justify-content: space-between;
+      padding: 20px 40px 0 40px;
+      img {
+        width: 150px;
+        height: 25px;
+        align-self: center;
+        margin: 0 0 0 60px;
+      }
+      ul {
+        display: flex;
+        justify-content: space-evenly;
+        width: 50%;
+        li {
+          color: vars.$white;
+          list-style: none;
+        }
+      }
+      i {
+        display: none;
+      }
+    }
+    .box {
+      border: 1px solid white;
+      width: 500px;
+      height: 188px;
+      margin: 90px 0 0 100px;
+      p {
+        color: white;
+        font-family: vars.$font-josefin;
+        font-size: 50px;
+        font-weight: 300;
+        text-transform: uppercase;
+        margin: 0;
+        padding: 20px 35px;
+      }
+    }
+  }
+  
+  main {
+    height: 90vh;
+    margin: 50px 100px;
+    .principal {
+      height: 100%;
+      position: relative;
+      img{
+        position: relative;
+        top: 30px;
+        left: 0px;
+        height: 70%;
+        width: 600px;
+      }
+      .interactive-card {
+        display: inline-block;
+        position: absolute;
+        top: 179px;
+        left: 500px;
+        z-index: 30;
+        width: 450px;
+        height: 228px;
+        padding: 80px 0 0 80px;
+        background-color: vars.$white;
+        h2{
+          display: inline;
+          text-transform: uppercase;
+          word-spacing: 15px;
+          
+          color: vars.$black;
+          font-size: 35px;
+        }
+        p{
+          font-size: 15px;
+          color: vars.$very-dark-gray;
+          font-family: vars.$font-alata;
+          margin-top: 15px;
+        }
+      }
+    }
+  }
+  
+  .grid-section{
+    margin: 100px 100px;
+    .title {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 40px;
+      h2 {
+        margin: 0;
+        text-transform: uppercase;
+        font-size: 40px;
+        font-family: vars.$font-josefin;
+        font-weight: 400;
+      }
+      button {
+        display: block;
+        text-transform: uppercase;
+        width: 150px;
+        background-color: white;
+        border: 2px solid vars.$very-dark-gray;
+        cursor: pointer;
+        font-family: vars.$font-alata;
+        font-size: 14px;
+        letter-spacing: 5px;
+      }
+    }
+    .grid-cards {
+      display: grid;
+      grid-template-columns: repeat(4, (1fr));
+      grid-template-rows: repeat(2, (1fr));
+      gap: 20px;
+      div {
+        width: 100%;
+        height: 500px;
+        h3 {
+          position: relative;
+          top: 450px;
+          left: 20px;
+          color: white;
+          text-transform: uppercase;
+          font-size: 25px;
+          font-family: vars.$font-josefin;
+        }
+      }
+      .grid-1 {
+        background: url('../images/desktop/image-deep-earth.jpg') no-repeat;
+        background-size: cover;
+      }
+      .grid-2 {
+        background: url('../images/desktop/image-night-arcade.jpg') no-repeat;
+        background-size: cover;
+      }
+      .grid-3 {
+        background: url('../images/desktop/image-soccer-team.jpg') no-repeat;
+        background-size: cover;
+      }
+      .grid-4 {
+        background: url('../images/desktop/image-grid.jpg') no-repeat;
+        background-size: cover;
+      }
+      .grid-5 {
+        background: url('../images/desktop/image-from-above.jpg') no-repeat;
+        background-size: cover;
+      }
+      .grid-6 {
+        background: url('../images/desktop/image-pocket-borealis.jpg') no-repeat;
+        background-size: cover;
+      }
+      .grid-7 {
+        background: url('../images/desktop/image-curiosity.jpg') no-repeat;
+        background-size: cover;
+      }
+      .grid-8 {
+        background: url('../images/desktop/image-fisheye.jpg') no-repeat;
+        background-size: cover;
+      }
+    }
+  }
+  
+  footer {
+    background-color: vars.$black;
+    color: white;
+    display: block;
+    img {
+      width: 150px;
+      height: 25px;
+      margin: 40px 0 20px 100px;
+    }
+    .low-section { 
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      margin: 20px 0 0 60px;
+      ul {
+        display: flex;
+        justify-content: space-between;
+        li {
+          list-style: none;
+        }
+      }
+      p {
+        
+        text-align: end;
+        color: vars.$dark-gray;
+        margin-right: 100px;
+      }
+    }
+    .attribution {
+      text-align: center;
+      margin-top: 40px;
+      padding-bottom: 20px;
+      a {
+        text-decoration: none;
+        color: vars.$dark-gray;
+      }
+    }
+  }
+}
