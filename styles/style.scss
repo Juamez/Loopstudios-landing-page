@@ -39,18 +39,17 @@ a {
   }
   .box {
     border: 1px solid white;
-    width: 300px;
-    height: 290px;
-    margin: 150px 40px 0 40px;
+    width: 85%;
+    height: 270px;
+    margin: 150px 0 0 20px;
     p {
       color: white;
       font-family: vars.$font-josefin;
-      font-size: 40px;
+      font-size: 35px;
       font-weight: 300;
       text-transform: uppercase;
-      margin: 0;
-      padding: 40px 20px;
-      width: 86%;
+      padding: 50px 15px;
+      width: 90%;
     }
   }
 }
@@ -61,7 +60,6 @@ main {
   .principal {
     height: 100%;
     img{
-      margin: 0 10px;
       width: 100%;
       height: 210px;
       object-fit: cover;
@@ -75,7 +73,7 @@ main {
         word-spacing: 5px;
         text-align: center;
         color: vars.$black;
-        font-size: 35px;
+        font-size: 30px;
         margin-top: 50px;
       }
       p {
@@ -83,7 +81,6 @@ main {
         color: vars.$very-dark-gray;
         font-family: vars.$font-alata;
         margin: 20px auto;
-        text-align: center;
         line-height: 30px;
         width: 100%;
       }
@@ -228,7 +225,7 @@ footer {
     .box {
       border: 1px solid white;
       width: 500px;
-      height: 188px;
+      height: 215px;
       margin: 90px 0 0 100px;
       p {
         color: white;
@@ -256,24 +253,21 @@ footer {
         width: 600px;
       }
       .interactive-card {
-        display: inline-block;
         position: absolute;
         top: 179px;
         left: 500px;
-        z-index: 30;
         width: 450px;
-        height: 228px;
-        padding: 80px 0 0 80px;
+        height: 300px;
+        padding: 10px 0 0 40px;
         background-color: vars.$white;
-        h2{
-          display: inline;
+        h2 {
           text-transform: uppercase;
           word-spacing: 15px;
-          
           color: vars.$black;
           font-size: 35px;
+          margin-right: 20px;
         }
-        p{
+        p {
           font-size: 15px;
           color: vars.$very-dark-gray;
           font-family: vars.$font-alata;
